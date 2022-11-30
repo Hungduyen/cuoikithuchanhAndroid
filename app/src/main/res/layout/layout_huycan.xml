@@ -19,20 +19,6 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-
-    <TextView
-        android:id="@+id/quequan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/namsinh"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="0dp"
-        android:layout_toRightOf="@+id/imageHinh"
-        android:text="Năm sinh"
-        android:textColor="#10EA01"
-        android:textSize="20sp"
-        android:textStyle="italic" />
-
     <TextView
         android:id="@+id/namsinh"
         android:layout_width="wrap_content"
@@ -41,8 +27,20 @@
         android:layout_marginLeft="4dp"
         android:layout_marginTop="0dp"
         android:layout_toRightOf="@+id/imageHinh"
-        android:text="năm sinh"
+        android:text="Quốc gia"
         android:textColor="#0019FF"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/quequan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namsinh"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/imageHinh"
+        android:text=""
+        android:textColor="#10EA01"
         android:textSize="20sp"
         android:textStyle="italic" />
 

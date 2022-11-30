@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class MainActivity2 extends AppCompatActivity {
+public class huycan extends AppCompatActivity {
     ListView listView;
     ArrayList<com.example.thuchanhcuoiki.Thuoc> arrayList;
     com.example.thuchanhcuoiki.Adapter_thuoc adapter;
@@ -20,10 +20,10 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         listView = findViewById(R.id.listviewthuoc);
         arrayList = new ArrayList<>();
-        arrayList.add(new com.example.thuchanhcuoiki.Thuoc( "Huy Cận", "Sinh năm 1917", "Ân Phú", R.drawable.img));
-        arrayList.add(new com.example.thuchanhcuoiki.Thuoc( "Mạc Ngôn", "", "", R.drawable.img));
-        arrayList.add(new com.example.thuchanhcuoiki.Thuoc( "Shakespeare", "", "", R.drawable.img));
-        adapter = new com.example.thuchanhcuoiki.Adapter_thuoc( MainActivity2.this,R.layout.layout_monan, arrayList);
+        arrayList.add(new com.example.thuchanhcuoiki.Thuoc( "Tràng giang", "Sáng tác năm 1939", "Thể thơ 7 chữ", R.drawable.img_1));
+        arrayList.add(new com.example.thuchanhcuoiki.Thuoc( "Đoàn thuyền đánh cá", "", "", R.drawable.img_2));
+        arrayList.add(new com.example.thuchanhcuoiki.Thuoc( "Ta viết bài thơ gọi biển về", "", "", R.drawable.img_3));
+        adapter = new com.example.thuchanhcuoiki.Adapter_thuoc( huycan.this,R.layout.layout_huycan, arrayList);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -31,12 +31,17 @@ public class MainActivity2 extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position==0){
                     Intent intent = new Intent();
-                    intent.setClass(MainActivity2.this, com.example.thuchanhcuoiki.huycan.class);
+                    intent.setClass(huycan.this, com.example.thuchanhcuoiki.tranggiang_huycan.class);
                     startActivity(intent);
                 }
                 if(position==1){
                     Intent intent = new Intent();
-                    intent.setClass(MainActivity2.this, com.example.thuchanhcuoiki.tuonglai.class);
+                    intent.setClass(huycan.this, com.example.thuchanhcuoiki.danhca_huycan.class);
+                    startActivity(intent);
+                }
+                if(position==2){
+                    Intent intent = new Intent();
+                    intent.setClass(huycan.this, com.example.thuchanhcuoiki.bien_huycan.class);
                     startActivity(intent);
                 }
             }

@@ -45,12 +45,14 @@ public class Adapter_thuoc extends BaseAdapter {
         view = inflater.inflate(layout, null);
         Thuoc monan = arraylist.get(position);
 
-        TextView text1 = view.findViewById(R.id.tenkhoahoc);
-        TextView text2 = view.findViewById(R.id.tenthuonggoi);
+        TextView text1 = view.findViewById(R.id.tentacgia);
+        TextView text2 = view.findViewById(R.id.namsinh);
+        TextView text3 = view.findViewById(R.id.quequan);
         ImageView imageV = view.findViewById(R.id.imageHinh);
 
-        text1.setText(monan.getTenkhoahoc());
-        text2.setText(monan.getTenthuonggoi());
+        text1.setText(monan.getTentacgia());
+        text2.setText(monan.getNamsinh());
+        text3.setText(monan.getQuequan());
         imageV.setImageResource(monan.getHinh());
 
         return view;

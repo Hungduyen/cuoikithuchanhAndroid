@@ -6,15 +6,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layoutDescription="@xml/activity_thihientai_scene"
-    tools:context=".tuonglai">
+    tools:context=".danhca_huycan">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Thì hiện tại đơn"
+        android:text="Tác phẩm: Đoàn thuyền đánh cá"
         android:textAlignment="center"
         android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:text="Tóm tắt: Bài thơ là khúc tráng ca ca ngợi cuộc sống lao động tập thể của người dân chài trong công cuộc xây dựng và tái thiết đất nước, đồng thời bộc lộ niềm vui, niềm tự hào của nhà thơ trước khung cảnh thiên nhiên. Bài thơ có nhiều sáng tạo trong việc xây dựng hình ảnh bằng liên tưởng, tưởng tượng phong phú, độc đáo, có âm hưởng khỏe khoắn, hào hùng, lạc quan. Cánh buồm no gió cho ta thấy không khí rạo rực, hăng say lao động của người dân trong thời kỳ đổi mới.
+
+"
+        android:textAlignment="center"
+        android:textColor="#FF00A2" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +36,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Mã câu" />
+            android:text="Số sao" />
 
         <EditText
             android:id="@+id/editmacau"
@@ -48,7 +58,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Câu ví dụ" />
+            android:text="Đánh giá của bạn" />
 
         <EditText
             android:id="@+id/editcauvidu"
@@ -75,28 +85,6 @@
             android:layout_marginRight="10dp"/>
 
         <Button
-            android:id="@+id/delete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Xóa" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/update"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:text="Sửa" />
-
-        <Button
             android:id="@+id/reload"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,6 +92,9 @@
             android:text="Tải lại" />
 
     </LinearLayout>
+
+
+
 
     <ListView
         android:id="@+id/hientaidon"
